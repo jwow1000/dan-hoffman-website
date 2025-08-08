@@ -17,18 +17,23 @@ export default async function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1 className={styles.header1}>Dan Hoffman, LCSW</h1>
-        <div className={styles.pageDivider}>
-          <PortableText value={data.text}/>
-        </div> 
-        
-        <div className={styles.portraitWrapper}>
-          <FancyImage 
-            src={imageUrl} 
-            alt="a portrait of Dan Hoffman the therapist leaning on a fence in a bucolic rural setting, lush green grass. He's wearing a tweed suit with a lighter undershirt, and dark tie. He wears glasses"
+        <div className={styles.content}>
+          <div className={styles.pageDivider}>
+            <PortableText value={data.text}/>
+          </div> 
+          
+          <div className={styles.portraitWrapper}>
+            <FancyImage 
+              src={imageUrl} 
+              objectFit="contain"
+              alt="a portrait of Dan Hoffman the therapist leaning on a fence in a bucolic rural setting, lush green grass. He's wearing a tweed suit with a lighter undershirt, and dark tie. He wears glasses"
 
-           
-          ></FancyImage>
+            
+            ></FancyImage>
+          </div>
+
         </div>
+
        
       
        
