@@ -11,7 +11,7 @@ export default async function Home() {
     params: { slug: 'index' },
   });
   const imageUrl = urlFor(data.coverImage).url();
-  console.log("data", data)
+  // console.log("data", data)
 
   return (
     <div className={styles.page}>
@@ -26,7 +26,7 @@ export default async function Home() {
             <FancyImage 
               src={imageUrl} 
               objectFit="contain"
-              alt="a portrait of Dan Hoffman the therapist leaning on a fence in a bucolic rural setting, lush green grass. He's wearing a tweed suit with a lighter undershirt, and dark tie. He wears glasses"
+              alt={data.coverImage.alt}
 
             
             ></FancyImage>

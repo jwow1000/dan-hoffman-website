@@ -12,26 +12,27 @@ export default async function Page() {
     params: { slug: 'about' },
   });
   const imageUrl = urlFor(data.coverImage).url();
-  console.log("data", data)
+  // console.log("data", data)
 
   return (
     <div className={pageStyles.page}>
       <main className={pageStyles.main}>
         <h1 className={pageStyles.header1}>About Dan Hoffman</h1>
-        <div className={pageStyles.pageDivider}>
-          <PortableText value={data.text}/>
-          
+        <div className={pageStyles.content}>
+          <div className={pageStyles.pageDivider}>
+            <PortableText value={data.text}/>
+            
+          </div>
+          <div className={pageStyles.portraitWrapper}>
+            {
+              imageUrl &&
+              <FancyImage 
+                src={imageUrl} 
+                alt={data.coverImage.alt}
+              ></FancyImage>
+            }
+          </div> 
         </div>
-        <div className={pageStyles.portraitWrapper}>
-          {
-            imageUrl &&
-            <FancyImage 
-              src={imageUrl} 
-              alt="a portrait of Dan Hoffman the therapist leaning on a fence in a bucolic rural setting, lush green grass. He's wearing a tweed suit with a lighter undershirt, and dark tie. He wears glasses"
-            ></FancyImage>
-          }
-          
-        </div> 
       
       </main>
       
