@@ -1,5 +1,4 @@
 import FancyImage from "./components/fancyImage";
-import Link from "next/link";
 import { pageQuery } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/live";
 import { urlFor } from "@/sanity/lib/utils";
@@ -21,15 +20,7 @@ export default async function Home() {
         <div className={styles.pageDivider}>
           <PortableText value={data.text}/>
         </div> 
-        <div className={styles.pageDivider}>
-          
-          <Link
-            href={'/about'}
-          >
-            about
-          </Link>
-          
-        </div>
+        
         <div className={styles.portraitWrapper}>
           <FancyImage 
             src={imageUrl} 
@@ -39,9 +30,7 @@ export default async function Home() {
           ></FancyImage>
         </div>
        
-        <div className={styles.pageDivider}>
-          lots of space
-        </div>
+      
        
       </main>
       

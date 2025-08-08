@@ -8,7 +8,7 @@ import { PortableText } from "next-sanity";
 export default async function Page() {
   const { data } = await sanityFetch({
     query: pageQuery,
-    params: { slug: 'index' },
+    params: { slug: 'individual-psychotherapy' },
   });
   const imageUrl = urlFor(data.coverImage).url();
   console.log("data", data)
@@ -16,6 +16,7 @@ export default async function Page() {
   return (
     <div className={pageStyles.page}>
       <main className={pageStyles.main}>
+        <h1 className={pageStyles.header1}>{data.title}</h1>
         <div className={pageStyles.pageDivider}>
           <PortableText value={data.text} />
         </div>
