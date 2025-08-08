@@ -1,0 +1,57 @@
+:root {
+  font-family: var(--font-inter), sans-serif, Helvetica, sans-serif;
+  --z-base: 0;
+  --z-overlay: 10;
+  --z-header: 20;
+  --z-modal: 30;
+  --z-menu: 50;
+}
+
+html,
+body {
+  font-family: var(--font-inter), sans-serif;
+  --orange-cream: #F4D8B7;
+  --bg: #D9D9D9;
+  --gray: #6f6f6f;
+  --dark-gray: #484848;
+  --dark-purple: #682a71;
+  --high-green: #63f146;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1; /* this pushes footer down when content is short */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* for the fancy image fade in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
