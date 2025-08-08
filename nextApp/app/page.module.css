@@ -4,6 +4,10 @@
   flex-grow: 1;
   z-index: var(--z-base);
 }
+.pageDivider a {
+  color: var(--dark-purple);
+  text-decoration: underline;
+}
 
 .main {
   position: relative;
