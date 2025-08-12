@@ -16,6 +16,7 @@ export default async function Page() {
   return (
     <div className={pageStyles.page}>
       <main className={pageStyles.main}>
+        
         <h1 className={pageStyles.header1}>{data.title}</h1>
         <div className={pageStyles.content}>
           <div className={pageStyles.pageDivider}>
