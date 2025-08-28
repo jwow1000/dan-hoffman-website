@@ -18,9 +18,6 @@ function Header() {
         <Link href={"/individual-psychotherapy"} className={styles.navLink}>
           individual<br/> psychotherapy
         </Link>
-        <Link href={"/fees"} className={styles.navLink}>
-          fees
-        </Link>
         <Link href={"/contact"} className={styles.navLink}>
           contact
         </Link>
