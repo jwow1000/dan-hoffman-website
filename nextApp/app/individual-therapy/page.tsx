@@ -1,4 +1,3 @@
-import { urlFor } from "@/sanity/lib/utils";
 import { pageQuery } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/live";
 import RichText from "@/app/components/RichText";
@@ -10,8 +9,6 @@ export default async function Page() {
     query: pageQuery,
     params: { slug: 'individual-psychotherapy' },
   });
-  const imageUrl = urlFor(data.coverImage).url();
-  // console.log("data", data)
 
   return (
     <div className={pageStyles.page}>
@@ -23,15 +20,6 @@ export default async function Page() {
             <RichText value={data.text}/>
             
           </div>
-          {/* <div className={pageStyles.portraitWrapper}>
-            {
-              imageUrl &&
-              <FancyImage 
-                src={imageUrl} 
-                alt={data.coverImage.alt}
-              ></FancyImage>
-            }
-          </div>  */}
         </div>
       </main>
       
