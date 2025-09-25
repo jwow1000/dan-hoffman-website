@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@portabletext/types": "^2.0.15",
     "@types/d3": "^7.4.3",
     "@types/node": "^20",
     "@types/react": "^19",
