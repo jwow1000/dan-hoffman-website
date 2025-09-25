@@ -47,7 +47,9 @@
   width: 100%;
   height: 500px;
 }
-
+.main ul {
+  padding: 1rem;
+}
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
@@ -73,6 +75,10 @@
 .ctas {
   display: flex;
   gap: 16px;
+}
+
+.main strong {
+  color: var(--darkest-gray);
 }
 
 .ctas a {

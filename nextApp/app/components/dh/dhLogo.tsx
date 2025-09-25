@@ -42,13 +42,13 @@ function DhLogo() {
             <Link href={"/about"} className={styles.navLink}>
               about
             </Link>
-            <Link href={"/individual-psychotherapy"} className={styles.navLink}>
+            <Link href={"/individual-therapy"} className={styles.navLink}>
               individual
-              <br /> psychotherapy
+              <br /> therapy
             </Link>
-            <Link href={"/fees"} className={styles.navLink}>
+            {/* <Link href={"/fees"} className={styles.navLink}>
               fees
-            </Link>
+            </Link> */}
             <Link href={"/contact"} className={styles.navLink}>
               contact
             </Link>

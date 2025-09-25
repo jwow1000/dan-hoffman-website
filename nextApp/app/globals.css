@@ -14,6 +14,7 @@ body {
   --bg: #e9e9e9;
   --gray: #9d9d9d;
   --dark-gray: #484848;
+  --darkest-gray:#3a3a3a; 
   --dark-purple: #880e9b;
   --high-green: #63f146;
   max-width: 100vw;

@@ -2,7 +2,7 @@ import FancyImage from "../components/fancyImage";
 import { urlFor } from "@/sanity/lib/utils";
 import { pageQuery } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/live";
-import { PortableText } from "next-sanity";
+import RichText from "@/app/components/RichText";
 import pageStyles from "@/app/page.module.css";
 
 export default async function Page() {
@@ -19,7 +19,7 @@ export default async function Page() {
         <h1 className={pageStyles.header1}>Contact Dan Hoffmann</h1>
         <div className={pageStyles.content}>
           <div className={pageStyles.pageDivider}>
-            <PortableText value={data.text}/>
+            <RichText value={data.text}/>
             
           </div>
           <div className={pageStyles.portraitWrapper}>
