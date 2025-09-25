@@ -11,7 +11,6 @@ export default async function Home() {
     params: { slug: 'index' },
   });
   const imageUrl = urlFor(data.coverImage).url();
-  // console.log("data", data)
 
   return (
     <div className={styles.page}>
@@ -27,8 +26,6 @@ export default async function Home() {
               src={imageUrl} 
               objectFit="contain"
               alt={data.coverImage.alt}
-
-            
             ></FancyImage>
           </div>
 
