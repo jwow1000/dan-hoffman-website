@@ -19,10 +19,10 @@ function Footer() {
         <Link href={"/"} className={styles.navLink}>
           home
         </Link>
-        <Link href={"/"} className={styles.navLink}>
+        <Link href={"/about"} className={styles.navLink}>
           about
         </Link>
-        <Link href={"/"} className={styles.navLink}>
+        <Link href={"/contact"} className={styles.navLink}>
           contact
         </Link>
        
