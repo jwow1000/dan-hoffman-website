@@ -2,8 +2,36 @@
   margin-top: 2rem;
   flex-grow: 1;
 }
-
 .main {
   margin-top: 3rem;
   padding: 0 3rem; 
+}
+
+.content {
+  position: relative;;
+}
+.pageDivider {
+  width: 100%;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header1 {
+  color: var(--dark-gray);
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 599px) {
+  .header1 {
+    padding: 0;
+    
+  }
+  .pageDivider {
+    padding: 0;
+  }
 }
