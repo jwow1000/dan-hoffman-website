@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
@@ -16,7 +15,7 @@ const tinos = Source_Serif_4({
 
 
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Dan Hoffman, LCSW. Official Therapy Wesbite",
   description: "Dan Hoffman, LCSW. psychothereapy private sessions.",
 };

@@ -1,11 +1,11 @@
 'use client'
 import { useState } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 type ObjectFitOption = 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
 
 type FancyImageProps = {
-  src: string | StaticImageData;
+  src: string;
   alt: string;
   objectFit?: ObjectFitOption; 
 }

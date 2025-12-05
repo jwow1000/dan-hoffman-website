@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import logo from "@/public/dh-logo.svg";
 import styles from "./styles.module.css";
 
 function DhLogo() {
@@ -25,7 +24,7 @@ function DhLogo() {
         onClick={handleClick}
       >
         <Image
-          src={logo}
+          src={`/dh-logo.svg`}
           objectFit="contain"
           layout="fill"
           alt={"Dan Hoffman official logo, a capital D and an H"}
