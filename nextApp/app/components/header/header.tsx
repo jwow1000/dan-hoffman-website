@@ -13,13 +13,13 @@ function Header() {
       </div>
       <div className={styles.navWrapper}>
         <Link href={"/about"} className={styles.navLink}>
-          about
+          About
         </Link>
-        <Link href={"/individual-therapy"} className={styles.navLink}>
-          individual<br/> therapy
+        <Link href={"/services"} className={styles.navLink}>
+          Services<br/>
         </Link>
         <Link href={"/contact"} className={styles.navLink}>
-          contact
+          Contact
         </Link>
       </div>
       <DhLogo/>

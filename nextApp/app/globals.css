@@ -12,8 +12,8 @@ body {
   font-family: var(--font-inter), sans-serif;
   --orange-cream: #f6dec3;
   --bg: #e9e9e9;
-  --gray: #9d9d9d;
-  --dark-gray: #484848;
+  --gray: #797979;
+  --dark-gray: #605b5b;
   --darkest-gray:#3a3a3a; 
   --dark-purple: #880e9b;
   --high-green: #63f146;
@@ -43,6 +43,9 @@ main {
 a {
   color: inherit;
   text-decoration: none;
+}
+p {
+  margin-bottom: 1rem;
 }
 
 /* for the fancy image fade in effect */

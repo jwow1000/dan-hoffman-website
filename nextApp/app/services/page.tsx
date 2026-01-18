@@ -2,12 +2,12 @@ import { pageQuery } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/live";
 import RichText from "@/app/components/RichText";
 import pageStyles from "@/app/page.module.css";
-import styles from "@/app/individual-therapy/styles.module.css";
+import styles from "@/app/services/styles.module.css";
 
 export default async function Page() {
   const { data } = await sanityFetch({
     query: pageQuery,
-    params: { slug: 'individual-psychotherapy' },
+    params: { slug: 'services' },
   });
 
   return (
